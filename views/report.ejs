@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<% ListOfRecipients.forEach(function(ListOfRecipient){ %>
+        <p class="inline"><%= ListOfRecipient.donor_name %> - <%= ListOfRecipient.organs_name%>-<%= ListOfRecipient.hospital_name   %></p><p class="inline"><%= ListOfRecipient.phone_number %></p><p class="inline right"><%= ListOfRecipient.recipient_name %></p>
+     <br>
+   <% })  %> 
+
+    <script>
+        function myFunction() {
+             window.print();
+        }
+</script>
+</body>
+</html>

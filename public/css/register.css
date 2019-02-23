@@ -1,0 +1,52 @@
+* {box-sizing: border-box}
+
+/* Add padding to containers */
+div {
+  padding: 16px;
+}
+input {
+  
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  height:30px;
+}
+input :focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Set a style for the submit/register button */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  font-size:large;
+ 
+  opacity: 0.9;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   font-size:large;
+   font-family: 'Do Hyeon', sans-serif;
+}
+p{
+font-family: 'Merienda', cursive;
+font-size:large;
+}
+.pldg{
+border-style:ridge;
+background-color:#e6fff2
+}
+h1{
+color:#1f7a1f;
+}
+h3{
+     color:#1f7a1f;
+}

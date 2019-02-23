@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>register</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
+	<style type="text/css">
+	body{
+		background: #f2f2f2;
+	}
+		.invisible{
+			color:#f2f2f2;
+		}
+
+	.nav-colour{
+    
+    background-color: #b0f442;
+    
+
+	}
+	.tittle{
+		font-family: 'Libre Baskerville', serif;
+
+	}
+	.first{
+		background: white;
+		margin-left: 100px;
+		height:100%; 
+		width:1225px;
+		
+	}
+	h2{
+		color:#239023;
+		font-family: 'Quicksand', sans-serif;
+	}
+	h3{
+		color:#239023;
+		font-family: 'Quicksand', sans-serif;
+	}
+	h6{
+		color:#239023;
+		font-family: 'Quicksand', sans-serif;
+	}
+	.one{
+		font-family: 'Fahkwang', sans-serif;
+		color:#808080;
+
+	}
+	h4{
+		color:#239023;
+		font-family: 'Quicksand', sans-serif;
+	}
+	p{
+		font-family: 'Fahkwang', sans-serif;
+
+	}
+	input {
+  
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+  height:30px;
+}
+input :focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Set a style for the submit/register button */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+   font-family: 'Do Hyeon', sans-serif;
+}
+.w3-animate-fading{animation:fading 10s infinite}@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+	</style>
+	<script type="text/javascript">
+		window.open("success.html");
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light nav-colour ">
+		
+	
+		<ul class="navbar-nav mr-auto ">
+			<li class="nav-item"><a class="nav-link abt" href="home">HOME</a></li>
+			<li class="nav-item"><a class="nav-link abt" href="about">ABOUT</a></li>
+			<li class="nav-item"><a class="nav-link prcss" href="why should u donate">WHY SHOULD YOU DONATE</a></li>
+			<li class="nav-item"><a class="nav-link prcss" href="what do i need to do">WHAT DO I NEED TO DO</a></li>
+			 <li class="nav-item"><a class="nav-link prcss" href="register">REGISTRATION</a></li>
+			 <li class="nav-item"><a class="nav-link prcss" href="member">HOSPITALS</a></li>
+		</ul>
+
+		<span class="navbar-text tittle">
+      HOPE FOUNDATION OF ORGAN DONATION
+    </span>
+	
+	</nav>
+	<div>
+		
+		<div class="first border border-light shadow p-3 mb-5 bg-white rounded">
+			<div><image src="http://donatelifeindia.org/wp-content/uploads/2014/08/hands1500x4001.jpg" class="img-fluid w3-animate-fading" alt="Responsive image"></image></div>
+			<div>
+			<p class="invisible">jghkegbeakbvekberk</p>
+		</div>
+		<div><h2>Register to Pledge Your Organs. We will mail you the Donor Card</h2></div>
+		<div><p>Our mission is to spread awareness about Organ Donation in India. Once you register your wish on this website, you can download and print your donor card which will state your consent to having your organs and tissue made available for transplantation upon your death.</div>
+	<div><p>Print and keep this card with you at all times. Do understand that this card is not a legal document, but an acknowledgement of your wish to donate your organs. Remember that your family and dear ones would be the ones to who will give the final consent.</p></div>
+	<div><p>All information submitted will be kept completely confidential. We will not share, sell or otherwise compromise this information. Please note that the person you have nominated as an emergency contact will also receive an email informing him/her about your wish to donate.</p></div>
+	<div>
+		<label name="pledge"> YES! I wish to donate my organs, eyes, and tissues to save or enhance someone's life through transplantation.</label>
+		<input id="pledge" type="checkbox" name="pledge">
+	</div>
+</div>
+
+<div class="first border border-light shadow p-3 mb-5 bg-white rounded">
+	<div><h3>Details:</h3></div>
+	<form method="post" action="/register">
+	<ul>
+		<li class="reg_fname">
+			<label>Aadhar number <span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<input  name="donor_id" type="text" placeholder="Aadhar number" required="">
+		</li>
+		<li class="reg_fname">
+			<label>First Name <span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<input  name="fname" type="text" placeholder="First name" required="">
+		</li>
+		<li class="reg_lname">
+			<label>Last Name <span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<input  name="lname" type="text" placeholder="Last name" required="">
+		</li>
+		<li class="gender">
+			<label>Gender <span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<label for="male">Male</label>
+	        <input id="male" name="gender" type="radio" value="MALE">
+	        <label for="female">Female</label>
+	        <input id="female" name="gender" type="radio" value="FEMALE">
+	        <label for="other">Other</label>
+	        <input id="other" name="gender" type="radio" value="OTHER">
+	    </li>
+	    <li class="email">
+			<label>Email <span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<input  name="email" type="email" placeholder="Email" required="">
+		</li>
+	
+		<li>
+			<label>Date of Birth <span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<input type="date" id="dob" name="DOB"
+               value="1999-12-24"
+               min="1930-01-01" max="2011-12-31" />
+		</li>
+		<li>
+			<label>Blood Group <span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<select name=bloodgrp>
+				<option>A+ve</option>
+				<option>B+ve</option>
+				<option>AB+ve</option>
+				<option>O+ve</option>
+				<option>A-ve</option>
+				<option>B-ve</option>
+				<option>AB-ve</option>
+				<option>O-ve</option>
+			</select>
+			
+		</li>
+		<li><label>Address :</label></li>
+		<li>
+			<label>Door number <span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<input type="text" name="drno" required="">
+		</li>
+		<li>
+			<label>Street<span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<input type="text" name="street" required="">
+		</li>
+		<li>
+			<label>Area<span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<input type="text" name="area" required="">
+		</li>
+		<li>
+			<label>City<span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<input type="text" name="city" required="">
+		</li>
+		<li>
+			<label>Pincode<span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<input type="text" name="pincode" required="">
+		</li>
+		<li>
+			
+			<label>State<span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+            <span><select name="state">
+	        <option value="ANDHRA PRADESH">ANDHRA PRADESH</option>
+
+                                  
+                                  <option value="ASSAM">ASSAM</option>
+
+                                  
+                                  <option value="ARUNACHAL PRADESH">ARUNACHAL PRADESH</option>
+
+                                  
+                                  <option value="GUJRAT">GUJRAT</option>
+
+                                  
+                                  <option value="BIHAR">BIHAR</option>
+
+                                  
+                                  <option value="HARYANA">HARYANA</option>
+
+                                  
+                                  <option value="HIMACHAL PRADESH">HIMACHAL PRADESH</option>
+
+                                  
+                                  <option value="JAMMU & KASHMIR">JAMMU &amp; KASHMIR</option>
+
+                                  
+                                  <option value="KARNATAKA">KARNATAKA</option>
+
+                                  
+                                  <option value="KERALA">KERALA</option>
+
+                                  
+                                  <option value="MADHYA PRADESH">MADHYA PRADESH</option>
+
+                                  
+                                  <option value="MAHARASHTRA">MAHARASHTRA</option>
+
+                                  
+                                  <option value="MANIPUR">MANIPUR</option>
+
+                                  
+                                  <option value="MEGHALAYA">MEGHALAYA</option>
+
+                                  
+                                  <option value="MIZORAM">MIZORAM</option>
+
+                                  
+                                  <option value="NAGALAND">NAGALAND</option>
+
+                                  
+                                  <option value="ORISSA">ORISSA</option>
+
+                                  
+                                  <option value="PUNJAB">PUNJAB</option>
+
+                                  
+                                  <option value="RAJASTHAN">RAJASTHAN</option>
+
+                                  
+                                  <option value="SIKKIM">SIKKIM</option>
+
+                                  
+                                  <option value="TAMIL NADU">TAMIL NADU</option>
+
+                                  
+                                  <option value="TRIPURA">TRIPURA</option>
+
+                                  
+                                  <option value="UTTAR PRADESH">UTTAR PRADESH</option>
+
+                                  
+                                  <option value="WEST BENGAL">WEST BENGAL</option>
+
+                                  
+                                  <option value="DELHI">DELHI</option>
+
+                                  
+                                  <option value="GOA">GOA</option>
+
+                                  
+                                  <option value="PONDICHERY">PONDICHERY</option>
+
+                                  
+                                  <option value="LAKSHDWEEP">LAKSHDWEEP</option>
+
+                                  
+                                  <option value="DAMAN & DIU">DAMAN &amp; DIU</option>
+
+                                  
+                                  <option value="DADRA & NAGAR">DADRA &amp; NAGAR</option>
+
+                                  
+                                  <option value="CHANDIGARH">CHANDIGARH</option>
+
+                                  
+                                  <option value="ANDAMAN & NICOBAR">ANDAMAN &amp; NICOBAR</option>
+
+                                  
+                                  <option value="UTTARAKHAND">UTTARAKHAND</option>
+
+                                  
+                                  <option value="JHARKHAND">JHARKHAND</option>
+
+                                  
+                                  <option value="CHATTISGARH">CHATTISGARH</option>
+
+                                  <option value="TELANGANA">TELANGANA</option>
+				
+			                      </select></span>
+		</li>
+		<li>
+			<label>Mobile Number<span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<input type="text" name="phnno"  pattern="[0-9]{10}" required title="it should contain max 10 characters">
+		</li>
+		
+                            <li>
+                            	<label>Organs I wish to donate<span style="color:#FF0000">*</span></label>
+			                    <span class="colon">:</span>
+			                    <ul>
+			                    	<li><label>All organs</label>
+			                    
+			                    <input name="organs" type="checkbox" value="All organs">
+			                    <label>Cornea(eyes)</label>
+			                    
+			                    <input name="organs" type="checkbox" value="Cornea">
+			                    <label>Kidney</label>
+			                    
+			                    <input name="organs" type="checkbox" value="Kidney"></li>
+			                    <li>
+			                    	<label>Heart</label>
+			                    
+			                    <input name="organs" type="checkbox" value="Heart">
+			                    <label>Lungs</label>
+			                    
+			                    <input name="organs" type="checkbox" value="Lungs">
+			                    <label>Liver</label>
+			                    
+			                    <input name="organs" type="checkbox" value="Liver">
+			                   
+			                    
+			                    	 <label>Pancreas</label>
+			                    
+			                    <input name="organs" type="checkbox" value="Pancreas">
+			                     </li>
+			                    
+			                    </ul>
+			                   
+                            </li>
+
+              <li>
+              	<h6>Particulars of Next-of-Kin / Emergency Contact:</h6>
+              </li>  
+              <li class="name">
+			<label>Name <span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<input  name="name_of_kin" type="text" placeholder="name" required="">
+		</li>
+              <li class="email">
+			<label>Email <span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<input  name="email_of_kin" type="email" placeholder="email" required="">
+		</li>    
+		<li>
+			<label>Mobile Number<span style="color:#FF0000">*</span></label>
+			<span class="colon">:</span>
+			<input type="text" name="phnno_of_kin"  pattern="[0-9]{10}" required title="it should contain max 10 characters">
+		</li>   
+		<li>
+			<button class="btn btn-success" onclick="home()">Submit
+			</button>
+		</li>   
+
+
+	</ul>
+	</form>
+</div>
+</div>
+</body>
+</html>
